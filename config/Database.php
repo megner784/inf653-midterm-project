@@ -52,7 +52,8 @@ class Database {
 		$this->password = getenv('PASSWORD');
 		$this->dbname   = getenv('DBNAME');
 		$this->host     = getenv('HOST');
-		$this->port     = getenv('PORT');
+        $this->port     = 5432;               // PostgreSQL runs on port 5432, NOT 10000
+		// $this->port     = getenv('PORT');
 	}
     // DB Connection
     public function connect() {
