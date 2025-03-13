@@ -1,0 +1,5 @@
+# Ignore.htaccess file
+.htaccess
+old_htaccess
+create_quotesdb_tables.sql
+populate_quotesdb.sql
