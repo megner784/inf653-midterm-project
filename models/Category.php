@@ -61,6 +61,21 @@ class Category {
 
     }
 	
+    // Check if category exists
+    public function categoryExists($id) {
+      $query = 'SELECT COUNT(*) AS count FROM ' . $this->table . ' WHERE id = :id';
+      // Prepare statement
+      $stmt = $this->conn->prepare($query);
+      // Bind the category id
+      $stmt->bindParam(':id', $id);
+      // Execute query
+      $stmt->execute();
+      $row = $stmt->fetch(PDO::FETCH_ASSOC);
+      
+      // Return true if category exists, else false
+      return $row['count'] > 0;
+   }
+
 	// Create a new category
     public function create() {
 	

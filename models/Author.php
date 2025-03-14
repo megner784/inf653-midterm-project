@@ -61,6 +61,21 @@ class Author {
 
     }
 	
+	// Check if author exists
+    public function authorExists($id) {
+		$query = 'SELECT COUNT(*) AS count FROM ' . $this->table . ' WHERE id = :id';
+		// Prepare statement
+		$stmt = $this->conn->prepare($query);
+		// Bind the author id
+		$stmt->bindParam(':id', $id);
+		// Execute query
+		$stmt->execute();
+		$row = $stmt->fetch(PDO::FETCH_ASSOC);
+		
+		// Return true if author exists, else false
+		return $row['count'] > 0;
+	 }
+
 	// Create a new author
     public function create() {
 	
