@@ -35,7 +35,8 @@ if ($quote->delete()) {
 	// Per instructions just report back the id that was deleted
 	echo json_encode(array("id" => " {$quote->id} "));
 } else {
-	echo json_encode(array("message" => "Quote id {$quote->id} was not found"));
+	//echo json_encode(array("message" => "Quote id {$quote->id} was not found"));
+    echo json_encode(array("message" => "No Quotes Found"));
 }
 
 ?>

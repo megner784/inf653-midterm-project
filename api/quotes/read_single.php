@@ -40,7 +40,7 @@ if ($quote->quote !== null) {
 } else {
 
   // Display message if specific quote is not found
-  echo json_encode(array('message' => 'quote_id Not Found'));
+  echo json_encode(array('message' => 'No Quotes Found'));
 }
 
 ?>

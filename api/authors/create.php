@@ -40,7 +40,8 @@ if ($author->create()) {
 	//echo json_encode(array('message' => "created author ({$author->id}, {$author->author})"));
 	//echo json_encode(array('message' => 'created author (id, author)'));
 } else {
-	echo json_encode(array('message' => 'Author Not Created'));
+	//echo json_encode(array('message' => 'Author Not Created'));
+	echo json_encode(array('message' => 'author_id Not Found'));
 }
 
 ?>

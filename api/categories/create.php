@@ -38,7 +38,8 @@ if ($cat->create()) {
 	$new_cat_arr = array("id" => $cat->id, "category" => $cat->category);
 	print_r(json_encode($new_cat_arr));
 } else {
-	echo json_encode(array('message' => 'Category Not Created'));
+	//echo json_encode(array('message' => 'Category Not Created'));
+	echo json_encode(array('message' => 'category_id Not Found'));
 }
 
 ?>

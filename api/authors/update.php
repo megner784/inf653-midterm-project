@@ -37,7 +37,8 @@ if ($author->update()) {
 	print_r(json_encode($updated_author_arr));
 	//echo json_encode(array('message' => 'updated author (id, author)'));
 } else {
-	echo json_encode(array("message" => "author_id {$author->id} was not found"));
+	echo json_encode(array("message" => "author_id Not Found"));
+	//echo json_encode(array("message" => "author_id {$author->id} was not found"));
 	//echo json_encode(array('message' => 'Author Not Updated'));
 }
 

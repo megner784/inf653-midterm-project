@@ -38,8 +38,8 @@ if ($quote->update()) {
 	$updated_quote_arr = array("id" => $quote->id, "quote" => $quote->quote, "author_id" => $quote->author_id, "category_id" => $quote->category_id );
 	print_r(json_encode($updated_quote_arr));
 } else {
-	echo json_encode(array("message" => "Quote id {$quote->id} was not found"));
-	//echo json_encode(array('message' => 'Category Not Updated'));
+	//echo json_encode(array("message" => "Quote id {$quote->id} was not found"));
+	echo json_encode(array('message' => 'No Quotes Found'));
 }
 
 ?>
