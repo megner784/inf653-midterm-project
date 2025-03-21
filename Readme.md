@@ -9,7 +9,9 @@ Michael Egner
 
 ### Project Location
 https://inf653-midterm-project-aj1k.onrender.com
-
+https://inf653-midterm-project-aj1k.onrender.com/api/quotes/
+https://inf653-midterm-project-aj1k.onrender.com/api/authors/
+https://inf653-midterm-project-aj1k.onrender.com/api/categories/
 ### API Endpoints
 
 #### Authors
