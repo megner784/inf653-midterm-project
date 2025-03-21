@@ -4,6 +4,9 @@
 This project is a PHP OOP REST API designed to manage quotations, including both famous quotes and user submissions. 
 The API is developed using PHP and PostgreSQL database.</P>
 
+### Developer
+Michael Egner
+
 ### Project Location
 https://inf653-midterm-project-aj1k.onrender.com
 
