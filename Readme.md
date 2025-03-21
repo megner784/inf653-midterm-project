@@ -5,7 +5,7 @@ This project is a PHP OOP REST API designed to manage quotations, including both
 The API is developed using PHP and PostgreSQL database.</P>
 
 ### Project Location
-
+https://inf653-midterm-project-aj1k.onrender.com
 
 ### API Endpoints
 
